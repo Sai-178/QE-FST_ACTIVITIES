@@ -19,10 +19,10 @@ public class Act12 {
         driver.get("https://training-support.net/webelements/dynamic-content");
         WebElement but = driver.findElement(By.id("genButton"));
         builder.click(but).build().perform();
-        WebElement ele = driver.findElement(By.xpath("//h2[@id='word']"));
+        WebElement elee = driver.findElement(By.xpath("//h2[@id='word']"));
         wait.until(ExpectedConditions.textToBePresentInElement(ele, "porch"));
         //wait.until(ExpectedConditions.textToBePresentInElement((By.xpath("//h2[@id='word']")), "release"));
-        System.out.println(ele.getText());
+        System.out.println(elee.getText());
 
         driver.quit();
 
